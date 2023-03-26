@@ -1,6 +1,6 @@
 package chap06.section1.customgetset
 
-class User(_id: Int, _name: String, _age: Int){
+class User2(_id: Int, _name: String, _age: Int){
     val id: Int = _id
     var name: String = _name
         set(value) {
@@ -11,7 +11,7 @@ class User(_id: Int, _name: String, _age: Int){
 }
 
 fun main() {
-    val user1 = User(1, "kildong",35)
+    val user1 = User2(1, "kildong",35)
     user1.name = "coco" // 2. 여기서 사용자 고유의 출력 코드가 실행
     println("user3.name = ${user1.name}")
 }
